@@ -1,0 +1,147 @@
+/* Apply some styles to the header section */
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.nav-link {
+  transform: translateX(355px);
+}
+
+.logo-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: black;
+  margin-top: 35px;
+  border-radius: 25px;
+}
+/*.hero2 {
+  padding-bottom: 10px;
+}*/
+
+.project-1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.project-2 {
+  padding-bottom: 25px;
+}
+
+.project-3 {
+  padding-bottom: 25px;
+}
+
+/* Style the about section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  
+.container {
+    padding: 0 16px;
+  }
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.title {
+    color: rgb(8, 0, 0);
+  }
+
+.passage {
+    color: rgb(8, 0, 0)
+}
+
+.btn-group > .btn-secondary {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    /*background-color: #000;*/
+    text-align: center;
+    cursor: pointer;
+    /*width: 100%;*/
+    width: 10%;
+    transition: translateX(-10px);
+  }
+
+/*.button3 {border-radius: 8px;}*/
+  
+.button:hover {
+    background-color: #555;
+  }
+  
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+/*@media (max-width: 9999px) {
+  .navbar-toggler {
+    display: block !important;
+  }
+}*/
+
+/* Style the footer section*/
+.footer {
+    text-align: center;
+}
+
+/* Style the carousel section */
+.carousel img {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+}
+
+/* Zoom for the carousel section */
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+  
+}
