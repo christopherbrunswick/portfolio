@@ -15,4 +15,4 @@ def projects():
     return render_template('projects.html', year=current_year_project)
 
 #if __name__ == '__main__':
-    #app.run(debug=False, host='0.0.0.0')
+    #app.run(debug=True)
