@@ -1,4 +1,9 @@
 /* Apply some styles to the header section */
+body {
+  overflow-x: hidden;
+}
+
+
 .hero {
     background-color: #333;
     color: white;
@@ -6,9 +11,9 @@
     text-align: center;
 }
 
-.nav-link {
+/*.nav-link {
   transform: translateX(355px);
-}
+}*/
 
 .logo-center {
   display: block;
@@ -106,13 +111,70 @@
 .button:hover {
     background-color: #555;
   }
+
+  /* Media query for max-width: 650px */
+  @media (max-width: 650px) {
+    /* Style for replacing buttons with Font Awesome icons */
+    .change-to-icon {
+        display: inline-block;
+        padding: 0;
+        margin-right: 10px; /* Add spacing between icons */
+        font-size: 24px; /* Adjust the icon size as needed */
+    }
+    .change-to-icon:hover {
+        color: #eeeff0; /* Change color on hover if needed */
+    }
+    .btn-text {
+        display: none; /* Hide the button text */
+    }
+}
+
+@media (min-width: 650px) {
+  i {
+    display: none !important; 
+  }
+}
   
 @media screen and (max-width: 650px) {
     .column {
       width: 100%;
       display: block;
     }
+
+    /*ul.nav {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+
+    li.nav-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }*/
+
   }
+
+  @media (max-width: 650px){
+
+    .nav-item {
+      justify-content: center;
+    }
+    .nav-link {
+      justify-content: center;
+    }
+  }
+
+  ul {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      /*width: 100%;*/
+      padding: 0;
+    }
 
 /*@media (max-width: 9999px) {
   .navbar-toggler {
