@@ -14,5 +14,5 @@ def projects():
     current_year_project = datetime.date.today().year
     return render_template('projects.html', year=current_year_project)
 
-#if __name__ == '__main__':
-    #app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
